@@ -1,5 +1,5 @@
 before_install:
   sudo apt-get install build-essential autoconf automake libtool libcppunit-dev python-setuptools python-dev
 script:
-  cd arcus/scripts
+  cd scripts
   sudo ./build.sh
