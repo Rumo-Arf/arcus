@@ -4,9 +4,7 @@ script:
   cd scripts
   sudo ./build.sh
   
-  # Setup a local cache cloud with conf file. (Should be non-root user)
-  ./arcus.sh quicksetup conf/local.sample.json
-
-  # Test
+  sudo ./arcus.sh quicksetup conf/local.sample.json
+  
   echo "stats" | nc localhost 11211 | grep version
   echo "stats" | nc localhost 11212 | grep version
