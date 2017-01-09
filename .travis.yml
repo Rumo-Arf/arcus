@@ -5,6 +5,4 @@ script:
   sudo ./build.sh
   
   sudo ./arcus.sh quicksetup conf/local.sample.json
-  
-  echo "stats" | nc localhost 11211 | grep version
-  echo "stats" | nc localhost 11212 | grep version
+
